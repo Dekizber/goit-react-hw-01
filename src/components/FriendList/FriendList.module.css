@@ -1,0 +1,37 @@
+/* Стилі для списку */
+.friendList {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 10px;
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.67);
+  }
+  & img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+  & p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  & span {
+    font-size: 16px;
+  }
+}
+
+.colorOnline {
+  color: green;
+}
+
+.colorOffline {
+  color: red;
+}

@@ -1,8 +1,9 @@
+import s from "./FriendList.module.css";
 import FriendListItem from "./FriendListItem";
 
 const FriendList = ({ friends }) => {
   return (
-    <ul>
+    <ul className={s.friendList}>
       {friends.map((friend) => {
         return (
           <li key={friend.id}>
@@ -17,5 +18,4 @@ const FriendList = ({ friends }) => {
     </ul>
   );
 };
-
 export default FriendList;

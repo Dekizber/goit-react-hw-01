@@ -9,21 +9,24 @@ const Profile = ({
 }) => {
   return (
     <div className={s.userCard}>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+      <div className={s.userBox}>
+        <img className={s.userAvatar} src={image} alt="User avatar" />
+        <p className={s.userName}>{name}</p>
+        <p className={s.userTag}>@{tag}</p>
+        <p className={s.userLocation}>{location}</p>
       </div>
-      <ul>
-        <li>
-          <span>Followers</span> <span>{followers}</span>
+      <ul className={s.userStats}>
+        <li className={s.userStatsItem}>
+          <span className={s.userStatsText}>Followers</span>
+          <span className={s.userStatsQua}>{followers}</span>
         </li>
-        <li>
-          <span>Views</span> <span>{views}</span>
+        <li className={s.userStatsItem}>
+          <span className={s.userStatsText}>Views</span>{" "}
+          <span className={s.userStatsQua}>{views}</span>
         </li>
-        <li>
-          <span>Likes</span> <span>{likes}</span>
+        <li className={s.userStatsItem}>
+          <span className={s.userStatsText}>Likes</span>{" "}
+          <span className={s.userStatsQua}>{likes}</span>
         </li>
       </ul>
     </div>
