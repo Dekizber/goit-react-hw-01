@@ -1,3 +1,25 @@
 table {
-  background-color: grey;
+  border-collapse: collapse;
+  max-width: 100%;
+  margin: 20px auto;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.67);
+
+  & thead {
+    background-color: rgb(65, 59, 59);
+    color: white;
+  }
+
+  & th,
+  & td {
+    padding: 5px 30px;
+    border: 1px solid black;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    width: calc(100% / 3);
+  }
+
+  & tbody tr:nth-child(even) {
+    background-color: lightgray;
+  }
 }
